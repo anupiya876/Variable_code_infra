@@ -32,7 +32,7 @@ module "backend_subnet" {
 
 module "nsg_frontend" {
     depends_on = [ module.frontend_subnet ]
-    source = "../../Modules/azuerrm_nsg"
+    source = "../../Modules/azurerm_nsg"
     nsg_name = "infra-morning-frontend-nsg"
     rg_name  = "infra-morning-rg"
     location = "eastus"
@@ -41,7 +41,7 @@ module "nsg_frontend" {
 
 module "nsg_backend" {
     depends_on = [ module.backend_subnet ]
-    source = "../../Modules/azuerrm_nsg"
+    source = "../../Modules/azurerm_nsg"
     nsg_name = "infra-morning-backend-nsg"
     rg_name  = "infra-morning-rg"
     location = "eastus"
