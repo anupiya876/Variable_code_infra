@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name = ""
-    storage_account_name = ""
-    container_name = ""
-    key = ""
+    resource_group_name = "anu_workrg"
+    storage_account_name = "anustgaccount"
+    container_name = "anubackendcontainer"
+    key = "anu.terraform.statefile"
   }
   required_providers {
     azurerm = {
