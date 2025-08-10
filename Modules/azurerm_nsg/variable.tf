@@ -10,6 +10,3 @@ variable "rg_name" {
   type        = string
 }
 
-variable "security_rule_name" {
-  type        = string
-}

@@ -44,9 +44,7 @@ variable "vm_size" {
  variable "os_image_sku" {
   type        = string
  }
- variable "pip_name" {
-  type        = string
- }
+ 
 variable "keyvault_name" {
   type        = string
 }
