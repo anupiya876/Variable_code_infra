@@ -1,7 +1,7 @@
 module "resource_group" {
   source = "../../Modules/azurerm_resource_group"
   rg_name  = "infra-morning-rg"
-location = "eastus"
+  location = "eastus"
 }
 
 module "vnet" {
